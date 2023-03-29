@@ -8,16 +8,21 @@ The new version of web interface communicates with **sc-server** using two-way J
 
 Linux:
 ```sh
-git clone https://github.com/ostis-apps/ostis-example-app.git
-cd ostis-example-app/scripts
+git clone https://github.com/ostis-apps/ostis-gt-app.git
+cd ostis-gt-app/scripts
 git checkout 0.7.0
 ./install_ostis.sh
+```
+
+### Update the Graph Theory Knowledge Base:
+```sh
+git submodule update --remote # <- Pick up latest changes
 ```
 
 ## Build knowledge base
 Linux:
 ```sh
-cd ostis-example-app/scripts
+cd ostis-gt-app/scripts
 ./build_kb.sh
 ```
 
@@ -26,11 +31,11 @@ cd ostis-example-app/scripts
 Run on Linux (both terminals or terminal tabs should work at the same time):
 ```sh
 #Terminal 1
-cd ostis-example-app/scripts
+cd ostis-gt-app/scripts
 ./run_sc_server.sh
 
 #Terminal 2
-cd ostis-example-app/scripts
+cd ostis-gt-app/scripts
 ./run_scweb.sh
 ```
 
