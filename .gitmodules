@@ -1,3 +1,4 @@
 [submodule "kb/gt"]
 	path = kb/gt
 	url = https://github.com/qaip/gt
+	branch = main
