@@ -12,6 +12,7 @@ git clone https://github.com/ostis-apps/ostis-gt-app.git
 cd ostis-gt-app/scripts
 git checkout 0.7.0
 ./install_ostis.sh
+git submodule init
 ```
 
 ### Update the Graph Theory Knowledge Base:
